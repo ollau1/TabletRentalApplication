@@ -1,0 +1,95 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/purple_500"
+            android:title="TabletRentalApplication"
+            android:titleTextColor="@android:color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Your form elements -->
+            <RadioGroup
+                android:id="@+id/tabletGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/brandA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BrandA" />
+                <RadioButton
+                    android:id="@+id/brandB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BrandB" />
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/includeCable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Include Cable?" />
+
+            <RadioGroup
+                android:id="@+id/cableGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                <RadioButton
+                    android:id="@+id/usbC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USB-C" />
+                <RadioButton
+                    android:id="@+id/microUSB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Micro-USB" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/lenderName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lender Name"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/contactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact Number"
+                android:inputType="phone"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/rentButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rent"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

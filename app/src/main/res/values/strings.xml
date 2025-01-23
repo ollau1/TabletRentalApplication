@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TabletRentalApplication</string>
+    <string-array name="tablet_brands">
+        <item>All</item>
+        <item>BrandA</item>
+        <item>BrandB</item>
+    </string-array>
+
+    <string-array name="cable_types">
+        <item>All</item>
+        <item>USB-C</item>
+        <item>Micro-USB</item>
+    </string-array>
+</resources>
