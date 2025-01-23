@@ -32,7 +32,7 @@ public class AdminLoginActivity extends AppCompatActivity {
                 // Navigate to AdminActivity
                 Intent intent = new Intent(AdminLoginActivity.this, AdminActivity.class);
                 startActivity(intent);
-                finish(); // Optional: Prevent returning to login screen
+                finish();
             } else {
                 // Failed login
                 Toast.makeText(this, "Invalid username or password", Toast.LENGTH_SHORT).show();
